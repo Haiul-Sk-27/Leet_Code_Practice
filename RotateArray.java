@@ -1,5 +1,5 @@
 // In a straightforward way, we can create a new array and then copy elements to the
-//new array. Then change the original array by using System.arraycopy().
+// new array. Then change the original array by using System.arraycopy().
 
 public class RotateArray{
     public void rotate(int[] nums,int k){
