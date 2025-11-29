@@ -1,37 +1,39 @@
 public class LPDRM {
 
-    public String longestPalindromeString(String s) {
-        int[] count = new int[128];
+    public static boolean isPalindrome(String s) {
+        int left = 0;
+        int right = s.length() - 1;
 
-        for (char ch : s.toCharArray())
-            count[ch]++;
-
-        StringBuilder left = new StringBuilder();
-        StringBuilder right = new StringBuilder();
-        String middle = "";
-
-        for (int i = 0; i < 128; i++) {
-            int val = count[i];
-
-            for (int j = 0; j < val / 2; j++) {
-                left.append((char) i);
-                right.insert(0, (char) i);
+        while (left < right) {
+            if (s.charAt(left) != s.charAt(right)) {
+                return false;
             }
+            left++;
+            right--;
+        }
+        return true;
+    }
 
-            if (val % 2 == 1 && middle.isEmpty()) {
-                middle = String.valueOf((char) i);
+    public static String longestPalindromeWord(String sentence) {
+        String[] words = sentence.split("\\s+");
+        String longest = "";
+
+        for (String word : words) {
+            String clean = word.replaceAll("[^a-zA-Z]", "").toLowerCase();
+
+            if (isPalindrome(clean)) {
+                if (clean.length() > longest.length()) {
+                    longest = clean;
+                }
             }
         }
-
-        return left.toString() + middle + right.toString();
+        return longest;
     }
 
     public static void main(String[] args) {
-        LPDRM obj = new LPDRM();
+        String sentence = "builds this code check the sentence longest palindrome word level civic madam";
+        String result = longestPalindromeWord(sentence);
 
-        String test = "abccccdd";
-        String result = obj.longestPalindromeString(test);
-
-        System.out.println("Longest palindrome: " + result);
+        System.out.println("Longest palindrome word: " + result);
     }
 }
