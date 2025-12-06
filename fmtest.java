@@ -1,3 +1,5 @@
+//Find the missing number in an array
+
 public class fmtest {
     public static void main(String[] args){
         int total;
