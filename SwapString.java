@@ -1,3 +1,5 @@
+//How to print all permutations of a String in Java?
+
 public class SwapString {
     public static String swapString(String a,int i,int j){
         char[] b = a.toCharArray();
