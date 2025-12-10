@@ -1,3 +1,5 @@
+// Reverse the string with preserving the position of  spaces
+
 public class ReverseStringPreserveSpace {
     static void reverse(String str) {
         char[] inputArray = str.toCharArray();
