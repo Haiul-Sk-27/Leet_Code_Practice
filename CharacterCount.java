@@ -1,3 +1,5 @@
+//Write a java program to find number of characters,  number of words and number of lines in a text file?
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
