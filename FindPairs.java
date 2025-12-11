@@ -1,3 +1,5 @@
+//Find all pairs of elements whose sum is equal to  given number?
+
 public class FindPairs {
     public static void getPairsCount(int[] arr,int sum){
         for(int i = 0;i <= arr.length;i++){
