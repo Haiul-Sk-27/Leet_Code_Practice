@@ -1,3 +1,5 @@
+//Write a program to find top two maximum numbers in an array?
+
 public class TwoMaxNumbers{
     public void printTwoMaxNumbers(int[] nums){
         int maxOne = 0;
