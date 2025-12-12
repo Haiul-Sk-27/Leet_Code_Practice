@@ -1,3 +1,5 @@
+// How to find the word with the highest frequency  from a file in Java?
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -43,7 +45,6 @@ public class MostRepeatedWord {
             System.out.println("The mostReapted word in input files is: "+MostRepeatedWord);
 
             System.out.println("Number of occurence: "+count);
-
 
         }catch(IOException e){
             e.printStackTrace();
