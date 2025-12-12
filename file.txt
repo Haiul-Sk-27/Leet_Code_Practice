@@ -2,3 +2,4 @@ This is a sample input file.
 It contains multiple lines of text.
 Each line will be counted by the program.
 This file is used for testing character, word, and line counting.
+Append a new textAppend a new text
